@@ -15,3 +15,8 @@ def print_symbols_as_moves(symbols):
     print(f"{symbols[index_in_symbols['rock']]} - Rock")
     print(f"{symbols[index_in_symbols['paper']]} - Paper")
     print(f"{symbols[index_in_symbols['scissors']]} - Scissors")
+
+
+def main_game(symbols=("1", "2", "3")):
+    shuffled_symbols = shuffle_symbols(symbols)
+    print_symbols_as_moves(shuffled_symbols)
