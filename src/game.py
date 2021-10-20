@@ -1,9 +1,14 @@
-﻿def shuffle_symbols(symbols):
+﻿import random
+
+
+def shuffle_symbols(symbols):
     """
     Symbols must be a tuple of three elements
     """
 
-    return symbols
+    list_of_symbols = list(symbols)
+    random.shuffle(list_of_symbols)
+    return tuple(list_of_symbols)
 
 
 def print_symbols_as_moves(symbols):
